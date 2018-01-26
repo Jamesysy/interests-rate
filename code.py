@@ -6,7 +6,7 @@ def guess(par, pmt, dur,i=1):
         return 0
     elif float(abs(c-par))<=1:
         return i
-    elif float(abs(c-par))>1and c>par:
+    elif float(abs(c-par))>1 and c>par:
         i=i+i/2
         return guess(par,pmt,dur,i)
     elif float(abs(c-par))>1 and c<par:
